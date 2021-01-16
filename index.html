@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="survey-container">
+        <h1 id="title">Computer Survey</h1>
+        <p id="description">
+            We're trying to figure out the interest in computer science and related fields in 2021 and beyond.
+            We'd very much appreciate it if you could fill out our survey to better our research and help serve you.
+        </p>
+        <div id="survey">
+            <form id="survey-form">
+                <div class="group-form">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <div class="group-form">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email"
+                        required
+                    />
+                </div>
+                <div class="group-form">
+                    <label id="number-label" for="number">Age</label>
+                    <input
+                        type="number"
+                        name="number"
+                        id="number"
+                        class="form-control"
+                        placeholder="Age"
+                        min="1"
+                        max="99"
+                        required
+                    />
+                </div>
+                <div class="group-form">
+                    <lebel id="dropdown-label" for="dropdown">What option best describes  your current role?</lebel>
+                    <select 
+                        id="dropdown" 
+                        class="form-control" 
+                        placeholder="Position">
+                        <option value="student">Student</option>
+                        <option value="developer">Developer</option>
+                        <option value="hobby">Hobbyist</option>
+                    </select>
+                </div>
+                <div class="group-form">
+                    <label id="radio-label" for="radio">How did you hear about us?</label>
+                </div>
+                <div class="radio-form">
+                    <div class="google">
+                        <input type="radio"
+                            id="google" 
+                            name="referral"
+                            value="google" 
+                            />
+                        <label for="google">Google</label>
+                    </div>
+                    <div class="friend">
+                        <input type="radio"
+                            id="friend"
+                            name="referral"
+                            value="friend"
+                            />
+                        <label for="friend">Friend</label>
+                    </div>
+                    <div class="internet">
+                        <input type="radio"
+                            id="internet"
+                            name="referral"
+                            value="internet"
+                            />
+                        <label for="internet">Internet</label>
+                    </div>
+                </div>
+                <div class="group-form">
+                    <label>Languages you're interested in?</label>
+                </div>
+                <div class="languages">
+                    <input type="checkbox"
+                        id="c"
+                        name="c"
+                        value="c"
+                        />
+                    <label for="c">C</label><br>
+                    <input type="checkbox"
+                        id="cplus"
+                        name="cplus"
+                        value="cplusplus"
+                        />
+                    <label for="cplus">C++</label><br>
+                    <input type="checkbox"
+                        id="javascript"
+                        name="javascript"
+                        value="javascript"
+                        />
+                    <label for="javascript">JavaScript</label><br>
+                    <input type="checkbox"
+                        id="nodejs"
+                        name="nodejs"
+                        value="nodejs"
+                        />
+                    <label for="nodejs">Node.Js</label><br>
+                    <input type="checkbox"
+                        id="vue"
+                        name="vue"
+                        value="vue"
+                        />
+                    <label for="vue">Vue</label><br>
+                    <input type="checkbox"
+                        id="react"
+                        name="react"
+                        value="react"
+                        />
+                    <label for="react">React</label>
+                </div>
+                <div class="group-form">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="auto">Enter any additional comments here.</textarea>
+                </div>
+                <input type="submit"
+                    id="submit"
+                    value="Submit"
+                    />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
